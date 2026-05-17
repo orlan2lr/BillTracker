@@ -1,4 +1,4 @@
-import { Bill, BillCategory } from "@/types"
+import { Bill, BillCategory, BillFrequency } from "@/types"
 
 export function getPeriodKey(bill: Bill, date = new Date()): string {
   if (bill.frequency === 'annual') return `${date.getFullYear()}`
